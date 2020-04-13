@@ -3,37 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="./css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
 
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="Логотип Пинк">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photos.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="competition.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="competition.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
 
       <div class="page-header__subject">
-        <h2>Фотографии пользователей</h2>
+        <h2 class="page-header__text">Фотографии пользователей</h2>
       </div>
 
     </header>
@@ -43,61 +44,72 @@
       <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
 
       <section class="newsfeed">
+        <div class="newsfeed__desc">
+          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
         <div class="newsfeed__list">
-          <blockquote class="newsfeed__item">
-            <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+          <blockquote class="newsfeed__item pano">
+            <h2 class="newsfeed__pano-title">Панорама дня</h2>
+            <a class="newsfeed__photo photo__pano-of-the-day">
+              <img class="newsfeed__image newsfeed__image-pano" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
             </a>
-            <cite class="newsfeed__author-name">Анна<span>(5 минут назад)</span></cite>
+            <cite class="newsfeed__author-name">Анна <span>(5 минут назад)</span></cite>
             <p class="newsfeed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 215</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
             </a>
-            <cite class="newsfeed__author-name">Левон<span>(5 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Левон <span>(5 часов назад)</span></cite>
             <p class="newsfeed__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 356</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
             </a>
-            <cite class="newsfeed__author-name">Антон<span>(12 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Антон <span>(12 часов назад)</span></cite>
             <p class="newsfeed__text">Соседи будут рады!</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 666</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
             </a>
-            <cite class="newsfeed__author-name">Борис<span>(20 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Борис <span>(20 часов назад)</span></cite>
             <p class="newsfeed__text">Здесь могла быть ваша цитата о высоком и вечном.а</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 215</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
             </a>
-            <cite class="newsfeed__author-name">Сергей<span>(25 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Сергей <span>(25 часов назад)</span></cite>
             <p class="newsfeed__text">Самая кубанская в мире!</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 4</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Ноги">
             </a>
-            <cite class="newsfeed__author-name">Максим<span>(40 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Максим <span>(40 часов назад)</span></cite>
             <p class="newsfeed__text">Где снег-то?</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 150</p>
           </blockquote>
           <blockquote class="newsfeed__item">
             <a class="newsfeed__photo">
-              <img class="newsfeed__image" src="#" width="" height="" alt="">
+              <img class="newsfeed__image" src="/img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта">
             </a>
-            <cite class="newsfeed__author-name">Надежда<span>(45 часов назад)</span></cite>
+            <cite class="newsfeed__author-name">Надежда <span>(45 часов назад)</span></cite>
             <p class="newsfeed__text">Всем GM и взаимные лайки!</p>
+            <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
             <p class="newsfeed__likes">Нравится: 2560</p>
           </blockquote>
         </div>
