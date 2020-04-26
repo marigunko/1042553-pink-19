@@ -1,6 +1,7 @@
-.page-header__subject {
+.page-header__container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -10,4 +11,14 @@
 
 .page-header__text {
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__container {
+    width: 100%;
+
+    position: absolute;
+
+    background-color: fade(#000000, 20%);
+  }
 }
