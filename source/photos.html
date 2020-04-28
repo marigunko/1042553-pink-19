@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -13,7 +14,7 @@
 
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <a class="page-header__logo">
+            <a class="page-header__logo" href="index.html">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
             </a>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -51,12 +52,15 @@
           <div class="newsfeed__desc">
             <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
+
+          <div class="newsfeed__pano">
+            <h2 class="newsfeed__pano-title">Панорама дня</h2>
+            <a class="newsfeed__photo photo__pano-of-the-day">
+              <img class="newsfeed__image newsfeed__image-pano" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+            </a>
+          </div>
           <div class="newsfeed__list">
             <blockquote class="newsfeed__item pano">
-              <h2 class="newsfeed__pano-title">Панорама дня</h2>
-              <a class="newsfeed__photo photo__pano-of-the-day">
-                <img class="newsfeed__image newsfeed__image-pano" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-              </a>
               <cite class="newsfeed__author-name">Анна <span>(5 минут назад)</span></cite>
               <p class="newsfeed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
