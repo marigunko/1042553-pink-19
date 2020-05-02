@@ -3,8 +3,13 @@
   flex-direction: column;
 }
 
+.newsfeed__image-pano {
+  width: 100%;
+}
+
 .newsfeed__desc {
   font-size: 14px;
+  color: #283645;
 }
 
 .newsfeed__list {
@@ -16,6 +21,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  margin-top: 0;
 }
 
 .newsfeed__author-name {
@@ -29,9 +35,26 @@
   font-size: 14px;
   text-align: left;
   color: #283645;
+  line-height: 24px;
 }
 
 .newsfeed__likes {
   font-size: 14px;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .newsfeed__image-pano {
+    width: 100%;
+  }
+
+  .newsfeed__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .newsfeed__item {
+    width: 300px;
+  }
 }
