@@ -10,9 +10,11 @@
   <body>
 
     <header class="page-header">
+
       <div class="container page-header__container">
 
         <nav class="main-nav">
+
           <div class="main-nav__wrapper">
             <a class="page-header__logo" href="index.html">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
@@ -27,7 +29,7 @@
               <a>Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="competition.html">Конкурс</a>
+              <a href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -38,21 +40,20 @@
     </header>
 
     <main class="page-main">
+
       <div class="container">
         <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
       </div>
 
       <section class="newsfeed">
-        <div class="container newsfeed__container">
 
+        <div class="container newsfeed__container">
           <div class="page-header__subject">
             <h2 class="page-header__text">Фотографии пользователей</h2>
           </div>
-
           <div class="newsfeed__desc">
             <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           </div>
-
           <div class="newsfeed__pano">
             <h2 class="newsfeed__pano-title">Панорама дня</h2>
             <a class="newsfeed__photo photo__pano-of-the-day">
@@ -66,7 +67,6 @@
             </blockquote>
           </div>
           <div class="newsfeed__list">
-
             <blockquote class="newsfeed__item">
               <a class="newsfeed__photo">
                 <img class="newsfeed__image" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
@@ -124,13 +124,26 @@
           </div>
         </div>
       </section>
+
+      <section class="upload">
+
+        <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!<h2>
+        <a class="upload__photo">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+        </a>
+        <div class="editor">
+          <!--Здесь будут значки и бегунок для настройки фото-->
+          <a class="editor__button--active button" href="https://echo.htmlacademy.ru">Запостить</a>
+          <a class="editor__button button" href="https://echo.htmlacademy.ru">Отмена</a>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
 
       <div class="container page-footer__container">
 
-        <img class="newsfeed__like" src="/img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
+        <img class="page-footer__logo" src="/img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
 
         <div class="page-footer__social social">
           <ul class="social__list">
