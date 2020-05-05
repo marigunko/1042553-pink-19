@@ -41,32 +41,29 @@
 
     <main class="page-main">
 
-      <div class="container">
-        <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
-      </div>
-
       <section class="newsfeed">
 
-        <div class="container newsfeed__container">
-          <div class="page-header__subject">
-            <h2 class="page-header__text">Фотографии пользователей</h2>
-          </div>
-          <div class="newsfeed__desc">
-            <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          </div>
-          <div class="newsfeed__pano">
-            <h2 class="newsfeed__pano-title">Панорама дня</h2>
-            <a class="newsfeed__photo photo__pano-of-the-day">
-              <img class="newsfeed__image newsfeed__image-pano" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-            </a>
-            <blockquote class="newsfeed__item-pano">
-              <cite class="newsfeed__author-name">Анна <span>(5 минут назад)</span></cite>
-              <p class="newsfeed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
-              <p class="newsfeed__likes">Нравится: 215</p>
-            </blockquote>
-          </div>
-          <div class="newsfeed__list">
+        <div class="newsfeed__list">
+          <div class="container newsfeed__container">
+            <div class="page-header__subject">
+              <h1 class="page-header__text">Фотографии пользователей</h1>
+            </div>
+            <div class="newsfeed__desc">
+              <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+            </div>
+            <div class="newsfeed__pano">
+              <h2 class="visually-hidden newsfeed__pano-title">Панорама дня</h2>
+              <a class="newsfeed__photo photo__pano-of-the-day">
+                <img class="newsfeed__image newsfeed__image-pano" src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </a>
+              <blockquote class="newsfeed__item-pano">
+                <cite class="newsfeed__author-name">Анна <span>(5 минут назад)</span></cite>
+                <p class="newsfeed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <img class="newsfeed__like" src="/img/icon-heart.svg" width="12" height="12" alt="Сердечко">
+                <p class="newsfeed__likes">Нравится: 215</p>
+              </blockquote>
+            </div>
+
             <blockquote class="newsfeed__item">
               <a class="newsfeed__photo">
                 <img class="newsfeed__image" src="/img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
@@ -127,14 +124,48 @@
 
       <section class="upload">
 
-        <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!<h2>
-        <a class="upload__photo">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
-        </a>
-        <div class="editor">
-          <!--Здесь будут значки и бегунок для настройки фото-->
-          <a class="editor__button--active button" href="https://echo.htmlacademy.ru">Запостить</a>
-          <a class="editor__button button" href="https://echo.htmlacademy.ru">Отмена</a>
+        <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+
+          <div class="editor">
+            <p class="editor__image">
+              <input class="editor__image--input visually-hidden" id="image" type="file" name="image" value="" placeholder="Дорога">
+              <label class="editor__image--label" for="image" width="280" height="374"></label>
+            </p>
+            <ul class="editor__list">
+              <li class="editor__item">
+                <img class="editor__tools--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать фото">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </li>
+              <li class="editor__item">
+                <img class="editor__tools--fill" src="img/icon-editor-fill.svg" width="44" height="43" alt="Залить фото">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </li>
+              <li class="editor__item">
+                <img class="editor__tools--contrast" src="img/icon-editor-contrast.svg" width="32"height="32" alt="Контрастность фото">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </li>
+            </li>
+          </ul>
+          <button class="editor__button--active" href="https://echo.htmlacademy.ru">Запостить</button>
+          <button class="editor__button" href="https://echo.htmlacademy.ru">Отмена</button>
         </div>
       </section>
     </main>

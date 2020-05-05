@@ -40,12 +40,10 @@
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Страница конкурса</h1>
-
       <div class="container">
 
       <div class="page-header__subject">
-        <h2 class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h1 class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
       <div class="container">
@@ -54,23 +52,23 @@
 
       <section class="form container">
 
-        <form class="user-name" method="get" action="https://echo.htmlacademy.ru">
+        <div class="user-name" method="get" action="https://echo.htmlacademy.ru">
           <p class="form__item">
-            <label class="family--label" for="family">Фамилия</label>
-            <input class="family--input" id="family" type="text" name="family" value="" placeholder="Укажите фамилию *">
+            <label class="form__family--label" for="family">Фамилия</label>
+            <input class="form__family--input" id="family" type="text" name="family" value="" required placeholder="Укажите фамилию*">
           </p>
           <p class="form__item">
-            <label class="name--label" for="name">Имя</label>
-            <input class="name--input" id="name" type="text" name="name" value="" placeholder="Укажите ваше имя *">
+            <label class="form__name--label" for="name">Имя</label>
+            <input class="form__name--input" id="name" type="text" name="name" value="" required placeholder="Укажите ваше имя*">
           </p>
           <p class="form__item">
-            <label class="patronymic--label" for="patronymic">Отчество</label>
-            <input class="patronymic--input" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+            <label class="form__patronymic--label" for="patronymic">Отчество</label>
+            <input class="form__patronymic--input" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
           </p>
-        </form>
+        </div>
 
-        <fieldset class="achievement">
-          <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+        <div class="achievement">
+          <p class="achievement__title">Ваши безбашенные достижения в путешествии</p>
           <ul class="achievement__list">
             <li class="achievement__item">
               <input class="achievement__checkbox" type="checkbox" name="1" id="1" checked>
@@ -97,50 +95,49 @@
               <label class="achievement__text" for="6">Разгромил отель</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <form class="user-contacts" method="get" action="https://echo.htmlacademy.ru">
+        <div class="user-contacts" method="get" action="https://echo.htmlacademy.ru">
           <p class="form__item">
-            <label class="phone--label" for="phone">Номер телефона</label>
-            <input class="phone--input" id="phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
+            <label class="form__tel--label" for="tel">Номер телефона</label>
+            <input class="form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
           </p>
           <p class="form__item">
-            <label class="email--label" for="email">Адрес почты</label>
-            <input class="email--input" id="email" type="text" name="email" value="" placeholder="Введите почту *">
+            <label class="form__email--label" for="email">Адрес почты</label>
+            <input class="form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">
           </p>
-        </form>
+        </div>
 
-        <fieldset class="apps">
-          <legend class="apps__title">С каким приложением путешествовали?</legend>
+        <div class="apps">
+          <p class="apps__title">С каким приложением путешествовали?</p>
           <ul class="apps__list">
             <li class="apps__item">
-              <input class="apps__checkbox" type="checkbox" name="iOS" id="iOS" checked>
+              <input class="apps__checkbox" type="radio" name="iOS" id="iOS" checked>
               <label class="apps__text" for="iOS">Pink для iOS</label>
             </li>
             <li class="apps__item">
-              <input class="apps__checkbox" type="checkbox" name="Android" id="Android">
+              <input class="apps__checkbox" type="radio" name="Android" id="Android">
               <label class="apps__text" for="Android">Pink на Android</label>
             </li>
             <li class="appsapps__item">
-              <input class="apps__checkbox" type="checkbox" name="Windows" id="Windows">
+              <input class="apps__checkbox" type="radio" name="Windows" id="Windows">
               <label class="apps__text" for="Windows">Windows Phone</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
         <form class="user-text" method="get" action="https://echo.htmlacademy.ru">
           <p class="form__item">
             <label class="comment--label" for="comment">Опишите свои эмоции</label>
-            <input class="comment--input" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="comment--textarea" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </form>
 
-        <button class="main-nav__toggle" type="button">Отправить форму</button>
+        <button class="achievement__toggle" type="submit">Отправить форму</button>
 
         <p>* — обязательные поля</p>
 
-
-
+      </section>
     </main>
 
     <footer class="page-footer">
