@@ -1,3 +1,7 @@
+.page-footer__index {
+  display: none;
+}
+
 .page-footer__container {
   display: flex;
   flex-direction: column;
@@ -18,6 +22,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer__index {
+    display: flex;
+  }
+
   .page-footer__container {
     display: flex;
     flex-direction: row;
