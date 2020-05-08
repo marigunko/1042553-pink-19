@@ -50,90 +50,90 @@
       <div>
 
       <section class="form container">
+        <form class="form__content">
+          <div class="user-name" method="get" action="https://echo.htmlacademy.ru">
+            <p class="form__item">
+              <label class="form__family form__family--label" for="family">Фамилия</label>
+              <input class="form__family form__family--input" id="family" type="text" name="family" value="" required placeholder="Укажите фамилию*">
+            </p>
+            <p class="form__item">
+              <label class="form__name form__name--label" for="name">Имя</label>
+              <input class="form__name form__name--input" id="name" type="text" name="name" value="" required placeholder="Укажите ваше имя*">
+            </p>
+            <p class="form__item">
+              <label class="form__patronymic form__patronymic--label" for="patronymic">Отчество</label>
+              <input class="form__patronymic form__patronymic--input" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
 
-        <div class="user-name" method="get" action="https://echo.htmlacademy.ru">
-          <p class="form__item">
-            <label class="form__family form__family--label" for="family">Фамилия</label>
-            <input class="form__family form__family--input" id="family" type="text" name="family" value="" required placeholder="Укажите фамилию*">
-          </p>
-          <p class="form__item">
-            <label class="form__name form__name--label" for="name">Имя</label>
-            <input class="form__name form__name--input" id="name" type="text" name="name" value="" required placeholder="Укажите ваше имя*">
-          </p>
-          <p class="form__item">
-            <label class="form__patronymic form__patronymic--label" for="patronymic">Отчество</label>
-            <input class="form__patronymic form__patronymic--input" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
-          </p>
-        </div>
+          <div class="achievement">
+            <p class="achievement__title">Ваши безбашенные достижения в путешествии</p>
+            <ul class="achievement__list">
+              <li class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="1" id="1" checked>
+                <label class="achievement__text" for="1">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="2" id="2" checked>
+                <label class="achievement__text" for="2">Обгорел на пляже</label>
+              </li>
+              <li class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="3" id="3">
+                <label class="achievement__text" for="3">Видел Чака Норриса</label>
+              </li>
+              <li  class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="4" id="4">
+                <label class="achievement__text" for="4">Накупил сувениров</label>
+              </li>
+              <li class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="5" id="5" checked>
+                <label class="achievement__text" for="5">Удержал башню</label>
+              </li>
+              <li class="achievement__item">
+                <input class="achievement__checkbox" type="checkbox" name="6" id="6">
+                <label class="achievement__text" for="6">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
 
-        <div class="achievement">
-          <p class="achievement__title">Ваши безбашенные достижения в путешествии</p>
-          <ul class="achievement__list">
-            <li class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="1" id="1" checked>
-              <label class="achievement__text" for="1">Сделал селфи с акулой</label>
-            </li>
-            <li class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="2" id="2" checked>
-              <label class="achievement__text" for="2">Обгорел на пляже</label>
-            </li>
-            <li class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="3" id="3">
-              <label class="achievement__text" for="3">Видел Чака Норриса</label>
-            </li>
-            <li  class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="4" id="4">
-              <label class="achievement__text" for="4">Накупил сувениров</label>
-            </li>
-            <li class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="5" id="5" checked>
-              <label class="achievement__text" for="5">Удержал башню</label>
-            </li>
-            <li class="achievement__item">
-              <input class="achievement__checkbox" type="checkbox" name="6" id="6">
-              <label class="achievement__text" for="6">Разгромил отель</label>
-            </li>
-          </ul>
-        </div>
+          <div class="user-contacts" method="get" action="https://echo.htmlacademy.ru">
+            <p class="form__item">
+              <label class="form__tel form__tel--label" for="tel">Номер телефона</label>
+              <input class="form__tel form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="form__item">
+              <label class="form__email form__email--label" for="email">Адрес почты</label>
+              <input class="form__email form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">
+            </p>
+          </div>
 
-        <div class="user-contacts" method="get" action="https://echo.htmlacademy.ru">
-          <p class="form__item">
-            <label class="form__tel form__tel--label" for="tel">Номер телефона</label>
-            <input class="form__tel form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="form__item">
-            <label class="form__email form__email--label" for="email">Адрес почты</label>
-            <input class="form__email form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">
-          </p>
-        </div>
+          <div class="apps">
+            <p class="apps__title">С каким приложением путешествовали?</p>
+            <ul class="apps__list">
+              <li class="apps__item">
+                <input class="apps__checkbox" type="radio" name="iOS" id="iOS" checked>
+                <label class="apps__text" for="iOS">Pink для iOS</label>
+              </li>
+              <li class="apps__item">
+                <input class="apps__checkbox" type="radio" name="Android" id="Android">
+                <label class="apps__text" for="Android">Pink на Android</label>
+              </li>
+              <li class="appsapps__item">
+                <input class="apps__checkbox" type="radio" name="Windows" id="Windows">
+                <label class="apps__text" for="Windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
 
-        <div class="apps">
-          <p class="apps__title">С каким приложением путешествовали?</p>
-          <ul class="apps__list">
-            <li class="apps__item">
-              <input class="apps__checkbox" type="radio" name="iOS" id="iOS" checked>
-              <label class="apps__text" for="iOS">Pink для iOS</label>
-            </li>
-            <li class="apps__item">
-              <input class="apps__checkbox" type="radio" name="Android" id="Android">
-              <label class="apps__text" for="Android">Pink на Android</label>
-            </li>
-            <li class="appsapps__item">
-              <input class="apps__checkbox" type="radio" name="Windows" id="Windows">
-              <label class="apps__text" for="Windows">Windows Phone</label>
-            </li>
-          </ul>
-        </div>
+          <div class="user-text" method="get" action="https://echo.htmlacademy.ru">
+            <p class="form__item">
+              <label class="comment--label" for="comment">Опишите свои эмоции</label>
+              <textarea class="comment--textarea" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </div>
 
-        <form class="user-text" method="get" action="https://echo.htmlacademy.ru">
-          <p class="form__item">
-            <label class="comment--label" for="comment">Опишите свои эмоции</label>
-            <textarea class="comment--textarea" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </p>
+          <button class="achievement__toggle" type="submit">Отправить форму</button>
         </form>
-
-        <button class="achievement__toggle" type="submit">Отправить форму</button>
-
         <p>* — обязательные поля</p>
 
       </section>
