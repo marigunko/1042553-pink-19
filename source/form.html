@@ -7,61 +7,61 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
+
   <body>
 
     <header class="page-header">
 
-      <div class="container page-header__container">
+      <div class="page-header__container container ">
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="main-nav">
+
+          <div class="main-nav__wrapper">
+            <a class="page-header__logo" href="index.html">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
 
-      <div class="container">
-
-      <div class="page-header__subject">
-        <h1 class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-main__title">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
-      <div class="container">
-        <h3>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
-      <div>
-
       <section class="form container">
+
+        <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+
         <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
           <div class="user-name" method="get" action="https://echo.htmlacademy.ru">
             <p class="form__item">
-              <label class="form__family form__family--label" for="family">Фамилия</label>
+              <label class="form__family form__family--label" for="family">Фамилия:</label>
               <input class="form__family form__family--input" id="family" type="text" name="family" value="" required placeholder="Укажите фамилию*">
             </p>
             <p class="form__item">
-              <label class="form__name form__name--label" for="name">Имя</label>
+              <label class="form__name form__name--label" for="name">Имя:</label>
               <input class="form__name form__name--input" id="name" type="text" name="name" value="" required placeholder="Укажите ваше имя*">
             </p>
             <p class="form__item">
-              <label class="form__patronymic form__patronymic--label" for="patronymic">Отчество</label>
+              <label class="form__patronymic form__patronymic--label" for="patronymic">Отчество:</label>
               <input class="form__patronymic form__patronymic--input" id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
             </p>
           </div>
@@ -118,7 +118,7 @@
                 <input class="apps__checkbox" type="radio" name="Android" id="Android">
                 <label class="apps__text" for="Android">Pink на Android</label>
               </li>
-              <li class="appsapps__item">
+              <li class="apps__item">
                 <input class="apps__checkbox" type="radio" name="Windows" id="Windows">
                 <label class="apps__text" for="Windows">Windows Phone</label>
               </li>
@@ -126,7 +126,7 @@
           </div>
 
           <div class="user-text" method="get" action="https://echo.htmlacademy.ru">
-            <p class="form__item">
+            <p class="user-text__item">
               <label class="comment--label" for="comment">Опишите свои эмоции</label>
               <textarea class="comment--textarea" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
@@ -134,7 +134,7 @@
 
           <button class="achievement__toggle" type="submit">Отправить форму</button>
         </form>
-        <p>* — обязательные поля</p>
+        <p class="form__tip">* — обязательные поля</p>
 
       </section>
     </main>

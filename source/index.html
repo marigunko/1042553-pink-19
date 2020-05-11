@@ -12,7 +12,7 @@
 
     <header class="page-header">
 
-      <div class="container page-header__container">
+      <div class="page-header__container container ">
 
         <nav class="main-nav">
 
@@ -22,7 +22,6 @@
             </a>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </div>
-
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -37,7 +36,6 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-
         </nav>
       </div>
     </header>
@@ -46,35 +44,31 @@
 
       <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
 
-      <div class="container page-main__container">
+      <div class="page-main__container container">
 
-        <div class="page-main__download download">
+        <h2 class="page-main__slogan">Взгляните на жизнь иначе!</h2>
 
-          <h2 class="page-main__slogan">Взгляните на жизнь иначе!</h2>
-
-          <div class="download">
-            <h2 class="visually-hidden">Скачать приложение</h2>
-            <a class="download__button button" href="https://echo.htmlacademy.ru">Скачать приложение</a>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link download__link--appstore" href="https://echo.htmlacademy.ru">
-                  <img class="download__link download__link--img" src="img/logo-apple.svg" width="46" height="57" alt="Логотип Apple">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--playmarket" href="https://echo.htmlacademy.ru">
-                  <img class="download__link download__link--img" src="img/logo-android.svg" width="46" height="57" alt="Логотип Android">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--microsoftstore" href="https://echo.htmlacademy.ru">
-                  <img class="download__link download__link--img" src="img/logo-microsoft.svg" width="46" height="57" alt="Логотип Microsoft">
-                </a>
-              </li>
-            </ul>
-            <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-
-          </div>
+        <div class="download">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <a class="download__button button" href="https://echo.htmlacademy.ru">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--appstore" href="https://echo.htmlacademy.ru">
+                <img class="download__link download__link--img" src="img/logo-apple.svg" width="46" height="57" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--playmarket" href="https://echo.htmlacademy.ru">
+                <img class="download__link download__link--img" src="img/logo-android.svg" width="46" height="57" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoftstore" href="https://echo.htmlacademy.ru">
+                <img class="download__link download__link--img" src="img/logo-microsoft.svg" width="46" height="57" alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
 
@@ -117,12 +111,11 @@
         <h2 class="visually-hidden">Отзывы</h2>
 
         <div class="reviews__wrapper slider">
-
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
@@ -234,18 +227,18 @@
 
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 
-        <ul class="contacts_list">
-          <li class="contacts_item">
-            <h3 class="contacts__title">Звоните:</h3>
-            <p class="contacts__text">+7 (812) 555-66-66</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3>Звоните:</h3>
+            <p>+7 (812) 555-66-66</p>
           </li>
-          <li class="contacts_item">
-            <h3 class="contacts__title">Пишите:</h3>
-            <p class="contacts__text">mail@htmlacademy.ru</p>
+          <li class="contacts__item">
+            <h3>Пишите:</h3>
+            <p>mail@htmlacademy.ru</p>
           </li>
-          <li class="contacts_item">
-            <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+          <li class="contacts__item">
+            <h3>Приезжайте в гости:</h3>
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
           </li>
         </ul>
     </section>
