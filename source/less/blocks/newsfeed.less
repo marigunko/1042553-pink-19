@@ -1,13 +1,15 @@
 .newsfeed {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .newsfeed__title {
   color: #283645;
   font-size: 14px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 2.14;
   text-align: center;
   margin: 97px 39px;
 }
@@ -38,12 +40,12 @@
   color: #283645;
   font-size: 14px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.71;
   text-align: left;
 }
 
 .newsfeed__time {
-  font-size: 12px;
+  line-height: 1.71;
   font-weight: 300;
 }
 
@@ -51,7 +53,7 @@
   color: #283645;
   font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.71;
   text-align: left;
   margin: 0;
 }
@@ -60,7 +62,7 @@
   color: #d22856;
   font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 2;
   text-align: left;
 }
 
@@ -77,5 +79,35 @@
 
   .newsfeed__item {
     width: 300px;
+  }
+
+  .newsfeed__title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    width: 436px;
+  }
+
+  .newsfeed__item {
+    width: 50%;
+  }
+
+  .newsfeed__item:nth-child(1){
+    width: 100%;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .newsfeed__title {
+    width: 568px;
+  }
+
+  .newsfeed__item {
+    width: 33%;
+  }
+
+  .newsfeed__item:nth-child(1){
+    width: 100%;
   }
 }

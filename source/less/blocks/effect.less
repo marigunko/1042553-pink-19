@@ -1,0 +1,51 @@
+.effect {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    margin: 59px 36px 137px 21px;
+  }
+
+  .effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .effect__text {
+    padding: 43px 36px 31px 70px;
+  }
+
+  .effect__title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .effect__desc {
+    color: #283645;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    text-align: left;
+  }
+
+  .effect__link {
+    color: #d22856;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__text {
+    max-width: 525px;
+  }
+}

@@ -138,11 +138,12 @@
 
         <h2 class="upload__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
 
-          <div class="editor">
-            <p class="editor__image">
-              <input class="editor__image editor__image--input visually-hidden" id="image" type="file" name="image" value="" placeholder="Дорога">
-              <label class="editor__image editor__image--label" for="image"></label>
-            </p>
+        <div class="editor">
+          <p class="editor__image">
+            <input class="editor__image editor__image--input visually-hidden" id="image" type="file" name="image" value="" placeholder="Дорога">
+            <label class="editor__image editor__image--label" for="image"></label>
+          </p>
+          <div class="editor-inner">
             <ul class="editor__list">
               <li class="editor__item">
                 <img class="editor__tools editor__tools--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать фото">
@@ -178,6 +179,7 @@
           </ul>
           <button class="editor__button editor__button--active" type="submit">Запостить</button>
           <button class="editor__button" type="button">Отмена</button>
+          </div>
         </div>
       </section>
     </main>

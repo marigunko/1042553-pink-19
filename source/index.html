@@ -74,11 +74,10 @@
 
       <section class="advantages">
 
-        <div class="container advantages__container">
+        <div class="advantages__container container ">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="advantages__lead">
-            <p>Устали от серости мегаполиса?</p>
-            <p>Нам есть, что вам предложить!</p>
+            <p>Устали от серости мегаполиса? <br>Нам есть, что вам предложить!</p>
           </div>
           <div class="container advantages-wrapper__container">
             <ul class="advantages__list">
@@ -106,18 +105,54 @@
         </div>
       </section>
 
+      <section class="effect">
+
+        <div class="effect__wrapper container">
+          <div class="effect__img">
+            <svg id="timer" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+            </svg>
+          </div>
+          <div class="effect__text">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__desc">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
       <section class="reviews">
 
         <h2 class="visually-hidden">Отзывы</h2>
 
+        <div class="reviews__img--quotes">
+          <svg id="quotes" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+            <g>
+              <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+            </g>
+            <g>
+              <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+            </g>
+          </svg>
+        </div>
+
         <div class="reviews__wrapper slider">
-          <blockquote class="reviews__item slider__item">
+          <div class="reviews__item slider__item">
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
             <p class="reviews__author-name">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
+          </div>
           <div class="reviews__list slider__list">
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev" type="button">
+              <svg id="review-arrow-left" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
+            </button>
+            <button class="reviews__next" type="button">
+              <svg id="review-arrow-right" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              </svg>
+            </button>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
@@ -212,7 +247,7 @@
             </ul>
           </li>
         </ul>
-        <div class="rates__list slider__list">
+        <div class="rates__control slider__list">
           <button class="rates__prev" type="button">Предыдущий отзыв</button>
           <button class="rates__next" type="button">Следующий отзыв</button>
         </div>
@@ -244,16 +279,16 @@
     </section>
 
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069.0874433381955!2d30.320929846248536!3d59.938668626448475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588600832413!5m2!1sru!2sru" width="320" height="645" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2069.0874433381955!2d30.320929846248536!3d59.938668626448475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588600832413!5m2!1sru!2sru" width="100%" height="645" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <p>
-        <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Большая Конюшенная ул., 19/8, Санкт-Петербург, 191186">
+        <img src="img/bg-map-mobile@1x.png" width="100%" height="645" alt="Большая Конюшенная ул., 19/8, Санкт-Петербург, 191186">
       </p>
     </div>
   </main>
 
-  <footer class="page-footer page-footer__index">
+  <footer class="page-footer__index">
 
-    <div class="container page-footer__container">
+    <div class="page-footer__container container ">
 
       <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Пинк">
 

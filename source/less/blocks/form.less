@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   margin-right: 22px;
 }
 
@@ -8,7 +10,7 @@
   color: #283645;
   font-size: 14px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 2.14;
   text-align: center;
   margin: 75px 25px;
 }
@@ -24,7 +26,7 @@
   color: #d22856;
   font-size: 14px;
   font-weight: normal;
-  line-height: 30px;
+  line-height: 2.14;
   text-align: left;
   text-transform: uppercase;
 }
@@ -33,7 +35,7 @@
   color: #283645;
   font-size: 18px;
   font-weight: normal;
-  line-height: 30px;
+  line-height: 1.67;
   text-align: left;
   border: 2px solid #e5e5e5;
 }
@@ -42,7 +44,38 @@
   color: #283645;
   font-size: 14px;
   font-weight: normal;
-  line-height: 30px;
+  line-height: 2.14;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+  }
+
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .form__block:nth-child(4) {
+    order: 2;
+  }
+
+  .form__block:nth-child(2) {
+    order: 3;
+  }
+
+  .form__block:nth-child(3) {
+    order: 4;
+  }
+
+  .form__block:nth-child(5) {
+    order: 6;
+  }
 }

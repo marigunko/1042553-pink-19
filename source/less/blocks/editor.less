@@ -25,6 +25,26 @@
   color: rgba(40, 54, 69, 0.1);
   font-size: 18px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 1;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .editor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .editor-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .editor__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

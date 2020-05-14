@@ -16,11 +16,15 @@
   list-style: none;
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
 .site-list__item a {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
-  line-height: 32px;
+  line-height: 1.78;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -56,6 +60,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
@@ -68,5 +73,19 @@
 
   .site-list {
     width: 681px;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__item a {
+    width: 681px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+    text-transform: none;
   }
 }
