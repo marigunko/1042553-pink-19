@@ -77,6 +77,10 @@
   text-align: left;
 }
 
+.rates__control {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .rates {
     background-color: #e5e5e5;
@@ -97,11 +101,15 @@
     min-width: 152px;
   }
 
-  .rates__control,
+  .rates__control {
+    display: flex;
+  }
+
   .rates__toggles {
     display: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .rates__list {
     margin: 120px 130px 70px;
@@ -109,5 +117,9 @@
 
   .rates__item {
     min-width: 152px;
+  }
+
+  .rates__control {
+    display: none;
   }
 }
