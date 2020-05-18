@@ -6,21 +6,50 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("preview/pink-index-mobile-menu.png");
+      }
+      /* Планшет */
+      @media (min-width: 660px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("preview/pink-index-tablet-menu.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1200px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("preview/pink-index-desktop.png");
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
 
   <body>
 
     <header class="page-header">
-
       <div class="page-header__container container ">
-
-        <nav class="main-nav">
-
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="page-header__logo">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -41,13 +70,9 @@
     </header>
 
     <main class="page-main">
-
       <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
-
       <div class="page-main__container container">
-
         <h2 class="page-main__slogan">Взгляните на жизнь иначе!</h2>
-
         <div class="download">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <a class="download__button button" href="https://echo.htmlacademy.ru">Скачать приложение</a>
@@ -73,13 +98,13 @@
       </div>
 
       <section class="advantages">
-
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__container container ">
-          <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="advantages__lead">
-            <p>Устали от серости мегаполиса? <br>Нам есть, что вам предложить!</p>
+            <p>Устали от серости мегаполиса?</p>
+            <p>Нам есть, что вам предложить!</p>
           </div>
-          <div class="container advantages-wrapper__container">
+          <div class="advantages-wrapper__container">
             <ul class="advantages__list">
               <li class="advantages__item advantages__img__desktop iphone-screen-1">
                 <div class="advantages__text">
@@ -106,10 +131,10 @@
       </section>
 
       <section class="effect">
-
+        <h2 class="visually-hidden">Исследование</h2>
         <div class="effect__wrapper container">
           <div class="effect__img">
-            <svg id="timer" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <svg id="timer" width="238px" height="276px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
               <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
             </svg>
           </div>
@@ -122,9 +147,7 @@
       </section>
 
       <section class="reviews">
-
         <h2 class="visually-hidden">Отзывы</h2>
-
         <div class="reviews__img--quotes">
           <svg id="quotes" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
             <g>
@@ -135,7 +158,6 @@
             </g>
           </svg>
         </div>
-
         <div class="reviews__wrapper slider">
           <div class="reviews__item slider__item">
             <p class="reviews__author-info">25 лет, водитель трамвая</p>
@@ -163,9 +185,18 @@
       </section>
 
       <section class="rates">
-
         <h2 class="visually-hidden">Цены </h2>
-
+        <ul class="rates__available-list--tablet">
+          <li class="rates__available-item--tablet">
+            <h3>Розовый фильтр</h3>
+          </li>
+          <li class="rates__available-item--tablet">
+            <h3>Смайлики</h3>
+          </li>
+          <li class="rates__available-item--tablet">
+            <h3>Комментарии</h3>
+          </li>
+        </ul>
         <ul class="rates__list">
           <li class="rates__item">
             <header class="rates__head">
@@ -175,7 +206,7 @@
             <ul class="rates__available-list">
               <li class="rates__available-item">
                 <h3>Розовый фильтр</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
@@ -202,13 +233,13 @@
             <ul class="rates__available-list">
               <li class="rates__available-item">
                 <h3>Розовый фильтр</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
               <li class="rates__available-item">
                 <h3>Смайлики</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
@@ -228,19 +259,19 @@
             <ul class="rates__available-list">
               <li class="rates__available-item">
                 <h3>Розовый фильтр</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
               <li class="rates__available-item">
                 <h3>Смайлики</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
               <li class="rates__available-item">
                 <h3>Комментарии</h3>
-                <svg id="icon-yes" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <svg id="icon-yes" width="26.752px" height="26.752px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
               </li>
@@ -273,7 +304,7 @@
           </li>
           <li class="contacts__item">
             <h3>Приезжайте в гости:</h3>
-            <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+            <p>ул. Большая Конюшенная 19/8</p>
           </li>
         </ul>
     </section>
@@ -320,5 +351,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
   </body>
 </html>

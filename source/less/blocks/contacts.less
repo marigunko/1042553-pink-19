@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  flex-wrap: wrap;
 }
 
 .contacts__title {
@@ -10,15 +10,19 @@
   font-weight: 300;
   line-height: normal;
   text-align: center;
+  padding: 53px 48px 28px;
+  margin-bottom: 0;
 }
 
 .contacts__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .contacts__item {
-  margin: 28px auto;
+  margin: 0 40px 20px;
 }
 
 .contacts__item h3 {
@@ -42,15 +46,20 @@
 @media (min-width: @tablet-width) {
   .contacts__title {
     font-size: 40px;
+    padding: 0 78px;
   }
 
-  .contacts__list{
+  .contacts__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 9px 43px;
   }
+
   .contacts__item {
     width: 240px;
+    padding-bottom: 28px;
   }
 }
 
