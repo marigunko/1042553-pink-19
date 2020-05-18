@@ -97,17 +97,14 @@
           </div>
 
           <div class="user-contacts form__block">
-            <h4 class="user-contacts_title">Контактная информация</h4>
-              <label class="form__tel form__tel--label" for="tel">Номер телефона</label>	            <div class="user-contacts__content">
-              <input class="form__tel form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">	              <p class="form__item">
-            </p>	                <label class="form__tel form__tel--label" for="tel">Номер телефона</label>
-            <p class="form__item">	                <input class="form__tel form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
-              <label class="form__email form__email--label" for="email">Адрес почты</label>	              </p>
-              <input class="form__email form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">	              <p class="form__item">
-            </p>	                <label class="form__email form__email--label" for="email">Адрес почты</label>
-                <input class="form__email form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">
-              </p>
-            </div>
+            <p class="form__item">
+              <label class="form__tel form__tel--label" for="tel">Номер телефона</label>
+              <input class="form__tel form__tel--input" id="tel" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="form__item">
+              <label class="form__email form__email--label" for="email">Адрес почты</label>
+              <input class="form__email form__email--input" id="email" type="email" name="email" value="" required placeholder="Введите почту *">
+            </p>
           </div>
 
           <div class="apps form__block">
@@ -134,11 +131,11 @@
               <textarea class="comment--textarea" id="comment" type="text" name="comment" value="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </div>
-          <div class="form-submit form__block">
-            <button class="form__button" type="submit">Отправить форму</button>
-            <p class="form__tip">* — обязательные поля</p>
-          </div>
+
+          <button class="achievement__toggle" type="submit">Отправить форму</button>
         </form>
+        <p class="form__tip">* — обязательные поля</p>
+
       </section>
     </main>
 
