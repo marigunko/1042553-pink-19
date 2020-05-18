@@ -28,12 +28,12 @@
 .newsfeed__item {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
   margin-top: 0;
 }
 
 .newsfeed__text {
-  margin: 25px 15px;
+  margin: 0 25px 15px;
+  background-color: #f2f2f2;
 }
 
 .newsfeed__author-name {
@@ -77,10 +77,6 @@
     flex-wrap: wrap;
   }
 
-  .newsfeed__item {
-    width: 300px;
-  }
-
   .newsfeed__title {
     font-size: 18px;
     font-weight: normal;
@@ -92,10 +88,9 @@
     width: 50%;
   }
 
-  .newsfeed__item:nth-child(1){
+  .newsfeed__item:nth-child(1) {
     width: 100%;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -107,7 +102,7 @@
     width: 33%;
   }
 
-  .newsfeed__item:nth-child(1){
+  .newsfeed__item:nth-child(1) {
     width: 100%;
   }
 }
