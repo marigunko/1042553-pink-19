@@ -6,6 +6,38 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+
+      <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("preview/pink-photo-mobile-menu.png");
+      }
+      /* Планшет */
+      @media (min-width: 660px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("preview/pink-photo-tablet-menu.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1200px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("preview/pink-photo-desktop.png");
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
 
   <body>
@@ -42,7 +74,7 @@
 
     <main class="page-main">
 
-      <div class="page-main__title">
+      <div class="page-main__title photo__title">
         <h1>Фотографии пользователей</h1>
       </div>
 
@@ -177,8 +209,8 @@
               </li>
             </li>
           </ul>
-          <button class="editor__button editor__button--active" type="submit">Запостить</button>
-          <button class="editor__button" type="button">Отмена</button>
+          <button class="editor__button editor__button--post" type="submit">Запостить</button>
+          <button class="editor__button editor__button--decline" type="button">Отмена</button>
           </div>
         </div>
       </section>

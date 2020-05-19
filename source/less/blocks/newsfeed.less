@@ -9,15 +9,16 @@
   color: #283645;
   font-size: 14px;
   font-weight: 300;
-  line-height: 2.14;
+  line-height: 30px;
   text-align: center;
-  margin: 97px 39px;
+  padding: 31px 40px 35px;
 }
 
 .newsfeed__list {
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -25,23 +26,33 @@
   width: 100%;
 }
 
+.newsfeed__pano {
+  margin: 0;
+}
+
+.newsfeed__photo {
+  margin-bottom: -8px;
+}
+
+
 .newsfeed__item {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
-  margin-top: 0;
 }
 
 .newsfeed__text {
-  margin: 25px 15px;
+  background-color: #f2f2f2;
+  margin: 0 20px 20px;
+  padding: 18px 17px 20px;
 }
 
 .newsfeed__author-name {
   color: #283645;
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.71;
+  line-height: 24px;
   text-align: left;
+  margin: 0;
 }
 
 .newsfeed__time {
@@ -53,17 +64,24 @@
   color: #283645;
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.71;
+  line-height: 24px;
   text-align: left;
   margin: 0;
 }
 
+.newsfeed__like {
+  display: none;
+} /*Нарисовать сердечко лайка*/
+
 .newsfeed__likes {
   color: #d22856;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 2;
+  line-height: 24px;
+  text-transform: uppercase;
   text-align: left;
+  padding: 0;
+  margin: 10px 33px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,25 +95,36 @@
     flex-wrap: wrap;
   }
 
-  .newsfeed__item {
-    width: 300px;
-  }
-
   .newsfeed__title {
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.67;
-    width: 436px;
+    line-height: 30px;
+    margin: 0;
+    padding: 92px 46px 77px;
+  }
+
+  .newsfeed__text {
+    margin: 0 20px 41px;
+    padding: 24px 27px 0px;
+}
+
+  .newsfeed__item {
+    width: 300px;
   }
 
   .newsfeed__item:nth-child(1) {
     width: 100%;
   }
+
+  .photo__pano-of-the-day { /*Временно*/
+    height: 516px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .newsfeed__title {
-    width: 568px;
+    margin: 0;
+    padding: 92px 279px 87px;
   }
 
   .newsfeed__item {

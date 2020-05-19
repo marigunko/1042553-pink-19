@@ -6,6 +6,38 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+
+      <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("preview/pink-form-mobile-menu.png");
+      }
+      /* Планшет */
+      @media (min-width: 660px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("preview/pink-form-tablet-menu.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1200px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("preview/pink-form-desktop.png");
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
 
   <body>
@@ -42,13 +74,13 @@
 
     <main class="page-main container">
 
-      <div class="page-main__title">
+      <div class="page-main__title form__title">
         <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
 
       <section class="form container">
 
-        <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+        <h3 class="form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
 
         <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
           <div class="user-name form__block">

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  padding: 2px 18px 43px;
 }
 
 .editor__image--label {
@@ -9,24 +10,49 @@
   display: block;
   width: 280px;
   height: 374px;
-  margin: 0 auto;
   background-size: cover;
 }
 
 .editor__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
+  margin: 27px 37px;
 }
 
-.editor__button {
-  color: rgba(40, 54, 69, 0.1);
+.editor__button { /*У кнопок другой фон*/
+  color: #283645;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 18px;
   text-align: center;
+  text-decoration: none;
+  margin-top: 28px;
+  padding: 15px 37px;
+
+  border: 3px #283645;
+  border-radius: 50px;
+}
+
+.editor__button--post {
+  color: #d22856;
+  margin-top: 77px;
+  padding: 16px 89px;
+
+  border: 3px #d22856;
+  border-radius: 50px;
+}
+
+
+.editor__button--decline {
+  color: rgba(40, 54, 69, 0.1);
+  margin-top: 18px;
+  padding: 16px 101px;
+
+  border: 3px rgba(40, 54, 69, 0.1);
+  border-radius: 50px;
 }
 
 @media (min-width: @tablet-width) {

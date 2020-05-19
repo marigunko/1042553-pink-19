@@ -55,7 +55,7 @@
     color: #000000;
     font-size: 20px;
     font-weight: bold;
-    line-height: 2.14;
+    line-height: 30px;
     text-align: center;
   }
 
@@ -65,7 +65,7 @@
     color: #283645;
     font-size: 14px;
     font-weight: normal;
-    line-height: 2.14;
+    line-height: 30px;
     text-align: center;
   }
 
@@ -83,6 +83,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    padding-top: 33px;
+  }
+
   .reviews__img--quotes {
     display: flex;
     justify-content: space-around;
@@ -97,12 +101,19 @@
   }
 
   .reviews__author-name {
-    font-size: 30px;
-    line-height: 1.67;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
   }
 
   .reviews__author-info {
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .reviews__text {
+  margin: 0;
+  padding: 18px 184px 36px;
   }
 }

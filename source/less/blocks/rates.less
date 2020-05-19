@@ -111,6 +111,7 @@
 .rates__control {
   display: none;
 }
+
 .rates__toggles {
   margin: 32px 0 5px;
 }
@@ -122,6 +123,7 @@
     background-color: #e5e5e5;
     margin: 72px 0;
   }
+
   .rates__available-list--tablet {
     display: flex;
     flex-direction: column;
@@ -184,15 +186,47 @@
 }
 
 @media (min-width: @desktop-width) {
-  .rates__list {
-    margin: 120px 130px 70px;
-  }
-
-  .rates__item {
-    min-width: 152px;
-  }
-
   .rates__control {
     display: none;
   }
+
+  .rates__list {
+    margin-top: 69px;
+  }
+
+  .rates__available-list--tablet {
+    margin: 165px 0 0 128px;
+  }
+
+  .rates__available-item--tablet {
+    padding: 15px 66px 15px 23px;
+  }
+
+  .rates__available-item h3,
+  .rates__available-item--tablet h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .rates__available-item {
+    padding: 17px 103px;
+  }
+
+  .rates__item {
+    width: 235px;
+    min-width: 235px;
+  }
+
+  .rates__head {
+    height: 96px;
+  }
+
+  .rates__head h2 {
+    padding-top: 14px;
+  }
+
+  .rates__head p {
+    font-size: 24px;
+    line-height: 30px;
+}
 }
