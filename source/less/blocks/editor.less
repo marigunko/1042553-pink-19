@@ -59,7 +59,7 @@
   .editor {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .editor-inner {
@@ -72,5 +72,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editor__submit {
+    display: flex;
+    flex-direction: row;
   }
 }

@@ -24,6 +24,10 @@
   display: none;
 }
 
+.rates__available-list--tablet {
+  display: none;
+}
+
 .rates__list {
   display: flex;
   flex-direction: row;
@@ -134,7 +138,16 @@
   margin: 32px 0 5px;
 }
 
+.rates__control {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .rates__available-list--tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
   .rates {
     display: flex;
     flex-direction: row;
@@ -203,6 +216,10 @@
     display: none;
   }
 
+  .rates__available-item h3 {
+    display: none;
+  }
+
   .rates__control,
   .rates__toggles {
     display: none;
@@ -257,5 +274,5 @@
   .rates__head span {
     top: 13px;
     left: -35px;
-}
+ }
 }
